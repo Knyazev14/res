@@ -89,8 +89,8 @@ export default {
 							"addressRegion": "Могилевская область, Республика Беларусь",
 							"addressCountry" : "RU"
 						},
-            url: "http://localhost:3000",
-            logo: "http://localhost:3000/logo2.svg",
+            url: "http://kniazey.ru",
+            logo: "http://kniazey.ru/logo2.svg",
           }),
           type: "application/ld+json",
           body: true,

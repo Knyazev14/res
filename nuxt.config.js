@@ -50,7 +50,7 @@ module.exports = {
     [
       "@nuxtjs/yandex-metrika",
       {
-        id: "XXXXXX",
+        id: "92010009",
         webvisor: true,
         // clickmap: true,
         // useCDN: false,
@@ -66,11 +66,11 @@ module.exports = {
 			description: "knyazev.com"
 		}
 	},
-	 axios: {
+	axios: {
 		proxy: true
 	 },
 	proxy:{
-		"/api/": "http://localhost:3000"
+		"/api/": "http://kniazey.ru"
 	},
   sitemap: {
     hostname: "http://localhost:3000",
