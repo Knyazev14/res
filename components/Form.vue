@@ -98,7 +98,7 @@ export default {
           this.$refs.form.reset();
         });
       });
-      axios.post(`http://localhost:3000`, formData);
+      axios.post(`http://kniazey.ru`, formData);
 			this.hide = false
     },
   },

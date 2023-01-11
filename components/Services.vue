@@ -28,7 +28,7 @@
 
 export default {
 	async fetch() {
-    this.services = await this.$http.$get(`http://localhost:3000/api/service/`);
+    this.services = await this.$http.$get(`http://kniazey.ru/api/service/`);
   },
 	data(){
 		return{

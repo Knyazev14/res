@@ -61,9 +61,9 @@ module.exports = {
   ],
 	pwa:{
 		manifest:{
-			name: "knyazev.com",
+			name: "kniazey.ru",
 			lang: "ru",
-			description: "knyazev.com"
+			description: "kniazey.ru"
 		}
 	},
 	axios: {
@@ -73,7 +73,7 @@ module.exports = {
 		"/api/": "http://kniazey.ru"
 	},
   sitemap: {
-    hostname: "http://localhost:3000",
+    hostname: "http://kniazey.ru",
     exclude: ["/**/new",
 							"/login"
 	],
@@ -85,7 +85,7 @@ module.exports = {
     routes: async () => {
 			
       const { data } = await axios.get(
-        "http://localhost:3000/api/theme/sitemap"
+        "http://kniazey.ru/api/theme/sitemap"
       );
       return data.map((page) => `${page.path}${page.url}`);
     },

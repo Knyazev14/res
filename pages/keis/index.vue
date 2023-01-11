@@ -34,7 +34,7 @@ export default {
 		}
 	},
 	async asyncData () {
-    const { data } = await axios.get(`http://localhost:3000/api/keis`)
+    const { data } = await axios.get(`http://kniazey.ru/api/keis`)
     return { keises: data }
   }
 }

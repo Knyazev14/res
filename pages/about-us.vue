@@ -43,7 +43,7 @@ export default {
             image: "me2.jpg",
             jobTitle: "Full-stack developer",
             name: "Князев Артём",
-            url: "http://www.janedoe.com",
+            url: "http://kniazey.ru",
           }),
           type: "application/ld+json",
           body: true,

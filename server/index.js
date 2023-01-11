@@ -91,7 +91,10 @@ async function start () {
 
   // Give nuxt middleware to express
   app.use(nuxt.render)
-
+	app.use(function(err, req, res, next){
+		console.log('This is the invalid field', err.field);
+		next(err)
+	})
   // Listen the server
   app.listen(port, host)
   consola.ready({

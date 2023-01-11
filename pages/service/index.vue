@@ -40,7 +40,7 @@ export default {
 		}
 	},
 	async asyncData () {
-    const { data } = await axios.get(`http://localhost:3000/api/service`)
+    const { data } = await axios.get(`http://kniazey.ru/api/service`)
     return { services: data }
   }
 }
