@@ -58,14 +58,17 @@ module.exports = {
       },
     ],
   ],
-	pwa:{
-		manifest:{
-			name: "kniazey.ru",
-			lang: "ru",
-			theme_color: "#000000",
-			description: "kniazey.ru"
+
+	pwa: {
+		manifest: {
+			name: 'kniazey.ru',
+			lang: 'ru',
+			useWebmanifestExtension: false,
+			descriptiondescription: 'kniazey.ru',
+			theme_color: "#42d392",
 		}
 	},
+
 	axios: {
 		proxy: true
 	 },

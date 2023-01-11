@@ -15,7 +15,6 @@
     "@nuxtjs/auth": "^4.9.1",
     "@nuxtjs/axios": "^5.3.6",
     "@nuxtjs/dotenv": "^1.4.0",
-    "@nuxtjs/pwa": "^3.0.0-0",
     "@nuxtjs/sitemap": "^2.4.0",
     "@nuxtjs/yandex-metrika": "^1.4.0",
     "body-parser": "^1.20.1",
@@ -37,6 +36,7 @@
     "vuex": "^3.4.0"
   },
   "devDependencies": {
+    "@nuxtjs/pwa": "^3.3.5",
     "nodemon": "^1.18.9"
   }
 }
