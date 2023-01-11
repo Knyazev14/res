@@ -36,7 +36,6 @@ module.exports = {
    ** Nuxt.js dev-modules
    */
   buildModules: [
-		// "@nuxtjs/pwa"
 	],
   /*
    ** Nuxt.js modules
@@ -53,23 +52,9 @@ module.exports = {
       {
         id: "92010009",
         webvisor: true,
-        // clickmap: true,
-        // useCDN: false,
-        // trackLinks: true,
-        // accurateTrackBounce: true,
       },
     ],
   ],
-
-	// pwa: {
-	// 	manifest: {
-	// 		name: 'kniazey.ru',
-	// 		lang: 'ru',
-	// 		useWebmanifestExtension: false,
-	// 		descriptiondescription: 'kniazey.ru',
-	// 		theme_color: "#42d392",
-	// 	}
-	// },
 
 	axios: {
 		proxy: true
