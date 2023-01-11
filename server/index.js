@@ -55,15 +55,15 @@ const sendMail = async (name, email, company, url) =>{
     port: 465,
     secure: true, // true for 465, false for other ports
     auth: {
-      user: process.env.MAIL_LOGIN, // generated ethereal user
-      pass: process.env.MAIL_PASSWORD, // generated ethereal password
+      user: "razzylom123@yandex.ru", // generated ethereal user
+      pass: "boxinglom123", // generated ethereal password
     },
   });
 
 	transporter.sendMail({
-    from: process.env.MAIL_LOGIN, // sender address
-    to: process.env.MAIL_LOGIN, // list of receivers
-    subject: "Сообщение с сайтв", // Subject line
+    from: "razzylom123@yandex.ru", // sender address
+    to: "razzylom123@yandex.ru", // list of receivers
+    subject: "Сообщение с сайта", // Subject line
 		 html: 
 		 	`<h1>${name}</h1>` +
 			`<h3>${email}</h3>` +
