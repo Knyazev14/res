@@ -18,7 +18,7 @@ export default {
   head() {
     return {
       link: [
-        { rel: "canonical", hred: `http://kniazey.ru${this.$route.path}` },
+        { rel: "canonical", hred: `https://kniazey.ru${this.$route.path}` },
       ],
     };
   },

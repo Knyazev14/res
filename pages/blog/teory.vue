@@ -46,7 +46,7 @@ export default {
 		}
 	},
 	async asyncData () {
-    const { data } = await axios.get(`http://kniazey.ru/api/blog/teory`)
+    const { data } = await axios.get(`https://kniazey.ru/api/blog/teory`)
     return { blogs: data }
   }
 }

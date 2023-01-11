@@ -35,13 +35,12 @@ module.exports = {
   /*
    ** Nuxt.js dev-modules
    */
-  buildModules: [],
+  buildModules: ["@nuxtjs/pwa"],
   /*
    ** Nuxt.js modules
    */
   modules: [
     "@nuxtjs/axios",
-    "@nuxtjs/pwa",
     "@nuxtjs/dotenv",
     "nuxt-lazy-load",
     "@nuxt/http",
@@ -63,6 +62,7 @@ module.exports = {
 		manifest:{
 			name: "kniazey.ru",
 			lang: "ru",
+			theme_color: "#000000",
 			description: "kniazey.ru"
 		}
 	},
@@ -70,10 +70,10 @@ module.exports = {
 		proxy: true
 	 },
 	proxy:{
-		"/api/": "http://kniazey.ru"
+		"/api/": "https://kniazey.ru"
 	},
   sitemap: {
-    hostname: "http://kniazey.ru",
+    hostname: "https://kniazey.ru",
     exclude: ["/**/new",
 							"/login"
 	],
@@ -85,7 +85,7 @@ module.exports = {
     routes: async () => {
 			
       const { data } = await axios.get(
-        "http://kniazey.ru/api/theme/sitemap"
+        "https://kniazey.ru/api/theme/sitemap"
       );
       return data.map((page) => `${page.path}${page.url}`);
     },

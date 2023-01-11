@@ -33,7 +33,7 @@ export default {
 		}
 	},
 	async asyncData ({params}) {
-    const { data } = await axios.get(`http://kniazey.ru/api/blog/${params.id}`);
+    const { data } = await axios.get(`https://kniazey.ru/api/blog/${params.id}`);
 		return { blog: data }
 	}
 }

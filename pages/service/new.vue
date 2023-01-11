@@ -71,7 +71,7 @@ export default {
       formData.append("coverImageName", this.coverImageName);
       formData.append("file", this.file);
       axios
-        .post(`http://kniazey.ru/api/service`, formData, {
+        .post(`https://kniazey.ru/api/service`, formData, {
           headers: { "Content-Type": "multipart/form-data" },
         })
         .then(
@@ -89,7 +89,7 @@ export default {
       let file = this.file;
       formData.append("file", file);
       axios
-        .post(`http://kniazey.ru/api/service/addFile`, formData, {
+        .post(`https://kniazey.ru/api/service/addFile`, formData, {
           headers: { "Content-Type": "multipart/form-data" },
         })
         .then((response) => (this.newAddFiles = response.data));

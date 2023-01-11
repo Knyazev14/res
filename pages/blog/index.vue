@@ -51,7 +51,7 @@ export default {
 		}
 	},
 	async asyncData () {
-    const { data } = await axios.get(`http://kniazey.ru/api/blog/`)
+    const { data } = await axios.get(`https://kniazey.ru/api/blog/`)
     return { blogs: data }
   }
 }

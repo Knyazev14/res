@@ -32,7 +32,7 @@ export default {
             "@context": "https://schema.org/",
             "@type": "Product",
             name: this.service.h1,
-            image: "http://kniazey.ru/seo.webp",
+            image: "https://kniazey.ru/seo.webp",
             description: this.service.description,
             aggregateRating: {
               "@type": "AggregateRating",
@@ -60,7 +60,7 @@ export default {
   },
   async asyncData({ params }) {
     const { data } = await axios.get(
-      `http://kniazey.ru/api/service/${params.id}`
+      `https://kniazey.ru/api/service/${params.id}`
     );
     return { service: data };
   },
