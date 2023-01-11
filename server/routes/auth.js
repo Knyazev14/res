@@ -17,7 +17,7 @@ app.use(
 )
 
 router.post("/login", async (req, res)=>{
-	if(req.body.user === "knyaz3680" && req.body.password === "razzylom123"){
+	if(req.body.user === process.env.ADMIN_lOGIN && req.body.password === process.env.ADMIN_lOGIN){
 		jsonwebtoken.sign({ user: req.body.user }, 'secret', function(err, token) {
 			res.json({token: token})
 	});
