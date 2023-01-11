@@ -35,7 +35,9 @@ module.exports = {
   /*
    ** Nuxt.js dev-modules
    */
-  buildModules: ["@nuxtjs/pwa"],
+  buildModules: [
+		// "@nuxtjs/pwa"
+	],
   /*
    ** Nuxt.js modules
    */
@@ -59,15 +61,15 @@ module.exports = {
     ],
   ],
 
-	pwa: {
-		manifest: {
-			name: 'kniazey.ru',
-			lang: 'ru',
-			useWebmanifestExtension: false,
-			descriptiondescription: 'kniazey.ru',
-			theme_color: "#42d392",
-		}
-	},
+	// pwa: {
+	// 	manifest: {
+	// 		name: 'kniazey.ru',
+	// 		lang: 'ru',
+	// 		useWebmanifestExtension: false,
+	// 		descriptiondescription: 'kniazey.ru',
+	// 		theme_color: "#42d392",
+	// 	}
+	// },
 
 	axios: {
 		proxy: true

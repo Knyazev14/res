@@ -36,7 +36,6 @@
     "vuex": "^3.4.0"
   },
   "devDependencies": {
-    "@nuxtjs/pwa": "^3.3.5",
     "nodemon": "^1.18.9"
   }
 }
