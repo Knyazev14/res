@@ -25,8 +25,8 @@ app.use(express.json());
 const serviceRoutes = require("./routes/service");
 const blogRoutes = require("./routes/blog");
 const keisRoutes = require("./routes/keis");
-const themeRoutes = require("./routes/theme");
 const authRoutes = require("./routes/auth");
+const themeRoutes = require("./routes/theme");
 
 app.use("/api/service", serviceRoutes);
 app.use("/api/blog", blogRoutes);
